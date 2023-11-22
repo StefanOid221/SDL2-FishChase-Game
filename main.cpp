@@ -46,8 +46,5 @@ int main( int argc, char *argv[] ){
         }
     }
     close();
-    // std::cout << "Press Enter to exit...";    
-    // std::cin.get(); 
-
 	return 0;
 }

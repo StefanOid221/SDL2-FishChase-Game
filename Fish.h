@@ -40,8 +40,6 @@ class Fish {
         void updateFlock(Fish (&fishes)[NUMBER_OF_FISHES], Vector playerPos);
 
     private:
-        //Fish position
-
         //Fish velocity
         float VelX, VelY;
 

@@ -18,9 +18,6 @@ Player::Player() {
     if (!vectorNew){
         vectorNew = new Vector {PosX, PosY};
     }
-
-   
-
 }
 
 Player:: ~Player() {
@@ -28,10 +25,6 @@ Player:: ~Player() {
             delete vectorNew;
         }
     };
-
-// void Player:: move(){
-
-// }
 
 void Player::handleEvent(SDL_Event* e) {
 
@@ -79,18 +72,11 @@ void Player::move()
         }
     }
     PosX += VelX;
-
-    //If the dot went too far to the left or right
     if( ( PosX  < 0 ) || ( PosX + PLAYER_WIDTH > SCREEN_WIDTH ) )
     {
-        //Move back
         PosX -= VelX;
     }
-
-    //Move the dot up or down
     PosY += VelY;
-
-    //If the dot went too far up or down
     if( ( PosY < 0 ) || ( PosY + PLAYER_HEIGTH > SCREEN_HEIGHT ) )
     {
         PosY -= VelY;

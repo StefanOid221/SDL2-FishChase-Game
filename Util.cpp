@@ -98,23 +98,6 @@ bool loadMedia()
 		success = false;
 	}
 
-    // if( !g0Texture.loadFromFile( "0Button.png" ) )
-	// {
-	// 	printf( "Failed to load up texture!\n" );
-	// 	success = false;
-	// }
-    // else{
-    //     gButtons[ 0 ].setPosition( 0, 0 );
-    //     gButtons[ 1 ].setPosition( SCREEN_WIDTH/3, 0);
-    //     gButtons[ 2 ].setPosition( 2*SCREEN_WIDTH/3, 0);
-    //     gButtons[ 3 ].setPosition( 0, SCREEN_HEIGHT/3);
-    //     gButtons[ 4 ].setPosition( SCREEN_WIDTH/3, SCREEN_HEIGHT/3);
-    //     gButtons[ 5 ].setPosition( 2*SCREEN_WIDTH/3, SCREEN_HEIGHT/3);
-    //     gButtons[ 6 ].setPosition( 0, 2*SCREEN_HEIGHT/3);
-    //     gButtons[ 7 ].setPosition( SCREEN_WIDTH/3, 2*SCREEN_HEIGHT/3);
-    //     gButtons[ 8 ].setPosition( 2*SCREEN_WIDTH/3, 2*SCREEN_HEIGHT/3);
-    // }
-
 	return success;
 }
 

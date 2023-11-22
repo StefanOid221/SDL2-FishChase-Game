@@ -54,24 +54,6 @@ void Fish:: initVel() {
     VelY = velocity * sin(angleRad);
 }
 
-void Fish::reflectAngle(bool horizontal) {
-    if (horizontal) {
-        // Reflect the angle along the X-axis
-        angleRad = M_PI - angleRad; // Reverse the direction along X-axis
-    }
-
-    else {
-        // Reflect the angle along the Y-axis
-        angleRad = -angleRad; // Reverse the direction along Y-axis
-    }
-
-    // Recalculate VelX and VelY based on the updated angle
-    VelX = velocity * cos(angleRad);
-    VelY = velocity * sin(angleRad);
-    
-}
-
-
 void Fish::move()
 {
     if( ( PosX  < 0 ))
